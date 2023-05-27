@@ -21,3 +21,20 @@ height: 100vh;
 background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/landing-img.jpg);
 background-size: cover;
 background-position: center;}
+
+.team-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    background: white;
+}
+
+.team-member{
+    display: flex;
+}
+
+.member-image{
+  border-radius: 80%;
+}

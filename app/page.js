@@ -8,6 +8,7 @@ export default function Home() {
     <div className="landing-page">
       <div className="landing-page">
         <SectionOne />
+        <SectionTwo />
     </div>
   </div>
   );
@@ -67,6 +68,19 @@ function SectionOne() {
 
           {/* More products... */}
         </div>
+      </div>
+    </div>
+  );
+}
+
+function SectionTwo() {
+  return (
+    <div className="team-section">
+      <div className="team-member">
+        <Image className="member-image" src="/JBS.png" width={600} height={500}></Image>
+      </div>
+      <div>
+        <Image className="member-image" src="/LBC.png" width={500} height={500}></Image>
       </div>
     </div>
   );
