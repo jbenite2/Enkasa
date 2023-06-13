@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import "./page.css"
 
-
 export default function Home() {
   return (
     <div className="landing-page">
@@ -13,74 +12,62 @@ export default function Home() {
   </div>
   );
 }
-
 function SectionOne() {
   return (
-    <div className="bg-white">
+    <div id="sectionOne" className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Products</h2>
-
+      <h2 style={{ textAlign: 'center', transitionTimingFunction: 'ease-in', transitionDuration: '5s', transitionDelay: '5s', color: 'black',  fontSize: '70px'}}>
+        <strong>Products</strong>
+      </h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           <a href="#" className="group">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <div className="aspect-w-1 w-[300px] overflow-hidden rounded-lg bg-gray-200">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg"
+                src="/products/droplet-delight.jpg"
                 alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                className="h-full w-full object-cover object-center group-hover:opacity-75"
+                className="h-[450px] w-full object-cover object-center group-hover:opacity-75"
               />
             </div>
-            <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-            <p className="mt-1 text-lg font-medium text-gray-900">$48</p>
+            <h3 className="mt-4 text-sm text-gray-700">Droplet Delight</h3>
+            <p className="mt-1 text-lg font-medium text-gray-900">$200</p>
           </a>
           <a href="#" className="group">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <div className="aspect-w-1 w-[300px] overflow-hidden rounded-lg bg-gray-200">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg"
+                src="/products/rooted-elegance.jpg"
                 alt="Olive drab green insulated bottle with flared screw lid and flat top."
-                className="h-full w-full object-cover object-center group-hover:opacity-75"
+                className="h-[450px] w-full object-cover object-center group-hover:opacity-75"
               />
             </div>
-            <h3 className="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-            <p className="mt-1 text-lg font-medium text-gray-900">$35</p>
+            <h3 className="mt-4 text-sm text-gray-700">Rooted Elegance</h3>
+            <p className="mt-1 text-lg font-medium text-gray-900">$450</p>
           </a>
           <a href="#" className="group">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <div className="aspect-w-1 w-[300px] overflow-hidden rounded-lg bg-gray-200">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg"
+                src="/products/spring-foliage.jpg"
                 alt="Person using a pen to cross a task off a productivity paper card."
-                className="h-full w-full object-cover object-center group-hover:opacity-75"
+                className="h-[450px] w-full object-cover object-center group-hover:opacity-75"
               />
             </div>
-            <h3 className="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+            <h3 className="mt-4 text-sm text-gray-700">Spring Foliage</h3>
             <p className="mt-1 text-lg font-medium text-gray-900">$89</p>
           </a>
-          <a href="#" className="group">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                className="h-full w-full object-cover object-center group-hover:opacity-75"
-              />
-            </div>
-            <h3 className="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-            <p className="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
-
-          {/* More products... */}
         </div>
       </div>
     </div>
   );
 }
 
+
 function SectionTwo() {
   return (
-    <div className="team-section">
+    <div id="sectionTwo" className="team-section">
       <div className="team-member">
-        <Image className="member-image" src="/JBS.png" width={600} height={500}></Image>
+        <Image className="rounded-full w-96 h-96 object-cover" src="/JBS.png" width={600} height={500}></Image>
       </div>
       <div>
-        <Image className="member-image" src="/LBC.png" width={500} height={500}></Image>
+        <Image className="rounded-full w-96 h-96 object-cover" src="/LBC.png" width={500} height={500}></Image>
       </div>
     </div>
   );

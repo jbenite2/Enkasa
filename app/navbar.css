@@ -1,59 +1,91 @@
-.banner{
+.banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/landing-img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(/landing-img.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.navbar{
+  }
+  
+  .navbar {
     width: 85%;
     margin: auto;
-    padding: 35px 0 ;
+    padding: 35px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo{
+  }
+  
+  .logo {
     width: 180px;
     cursor: pointer;
-}
-
-.navbar ul li{
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
     display: inline-block;
     margin: 0 10px;
     position: relative;
-}
-
-.navbar ul li a{
+  }
+  
+  .navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-}
-
-.navbar ul li::after{
+  }
+  
+  .navbar ul li::after {
     content: '';
     height: 3px;
     width: 0;
     background: #009688;
     position: absolute;
-    left: 0;    
+    left: 0;
     bottom: -10px;
     transition: 0.5s;
-}
-
-.navbar ul li:hover::after{
+  }
+  
+  .navbar ul li:hover::after {
     width: 100%;
-}
-
-.content{
+  }
+  
+  .content {
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-}
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none;
+    }
+  
+    .navbar .menu-toggle {
+      display: block;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    .navbar .menu-toggle:checked ~ ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar .menu-toggle:checked ~ ul li {
+      margin: 10px 0;
+    }
+  }
+  
