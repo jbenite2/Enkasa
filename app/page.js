@@ -51,7 +51,7 @@ function SectionOne() {
               />
             </div>
             <h3 className="mt-4 text-sm text-gray-700">Spring Foliage</h3>
-            <p className="mt-1 text-lg font-medium text-gray-900">$89</p>
+            <p className="mt-1 text-lg font-medium text-gray-900">$200</p>
           </a>
         </div>
       </div>
@@ -66,6 +66,7 @@ function SectionTwo() {
       <div className="team-member">
         <Image className="rounded-full w-96 h-96 object-cover" src="/JBS.png" width={600} height={500}></Image>
       </div>
+      <p>José Benítez, cofundador de Ambienta, es un estudiante universitario de cuarto año en la Universidad de Notre Dame, donde se encuentra cursando su bachillerato en Ciencias de la Computación. Su apasionante interés por el mundo de los negocios, la ingeniería, las matemáticas y la resolución de problemas lo ha impulsado a embarcarse en un proyecto aún más ambicioso: la creación de una empresa que fusiona todas estas facetas y, sobre todo, se enfoca en satisfacer las necesidades artísticas de sus clientes.</p>
       <div>
         <Image className="rounded-full w-96 h-96 object-cover" src="/LBC.png" width={500} height={500}></Image>
       </div>
